@@ -6,9 +6,25 @@
 
 exports.create = {
 	User: [
-		{ email: 'user@keystonejs.com', password: 'admin', name: { first: 'Admin', last: 'User' }, isAdmin: true }
-	]
+    {
+      company: "NBC Universal",
+      createdAt: new Date("2014-07-24T00:14:00Z"),
+      createdBy: "53d027957b30df2a1a314ee6",
+      groupId: "53d027957b30df2a1a314ee6",
+      email: "user@keystonejs.com",
+      isAdmin: true,
+      level: 3,
+      name: {
+        last: "User",
+        first: "Admin"
+      },
+      password: "admin",
+      phone: "555-555-5555",
+      rooms: null
+    }	]
+
 };
+
 
 /**
  * The following is the older version of this update script, it is
