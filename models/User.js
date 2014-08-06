@@ -44,5 +44,5 @@ User.schema.virtual('screening').get(function() {
  * Registration
  */
 
-//User.defaultColumns = 'name, email, company, phone, level, rooms';
+User.defaultColumns = 'name, email, company, phone, level, rooms';
 User.register();
