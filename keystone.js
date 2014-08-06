@@ -58,7 +58,6 @@ keystone.set('mongo',connection_string);
 // Configure the navigation bar in Keystone's Admin UI
 
 keystone.set('nav', {
-	'posts': ['posts', 'post-categories'],
 	'users': 'users'
 });
 
