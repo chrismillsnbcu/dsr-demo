@@ -69,6 +69,9 @@ html
                             if user
                                 if user.canAccessKeystone
                                     li: a(href='/keystone') Admin
+                                li: a(href='/keystone/signout') Sign Out
+                            else
+                                li: a(href='/keystone/signin') Sign In
 
         //- BODY
         #body

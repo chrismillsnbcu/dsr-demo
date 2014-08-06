@@ -39,6 +39,6 @@ exports = module.exports = function(app) {
   app.get('/', routes.views.index);
   //app.all('/contact', routes.views.contact);
   app.all('/screening-room/:id', middleware.requireUser, routes.views.screening);
-  //app.all('/video-player/:id', middleware.requireUser, routes.views.video);
+  app.all('/video-player/:id', middleware.requireUser, routes.views.video);
 
 };
