@@ -21,8 +21,7 @@ User.add({
   level : { type: Types.Select, numeric: true, options: [{ value: 1, label: 'User' }, { value: 2, label: 'Group Administrator' }, { value: 3, label: 'System Administrator' }] }
 },
   'Screening', {
-    //isAdmin: { type: Boolean, label: 'Can access Keystone', index: true },
-    rooms : { type: Types.Select, numeric: true, options: [{ value: 1, label: 'Screening room 1' }, { value: 2, label: 'Screening room 2' }, { value: 3, label: 'Screening room 3' }] }
+    rooms : { type: Types.Relationship, required: true, initial: true, ref: 'Screening', addNew: 'false' }
   });
 
 // Provide access to Keystone
